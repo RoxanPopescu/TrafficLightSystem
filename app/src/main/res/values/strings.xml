@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TrafficLightSystem</string>
+    <string name="car_model_txt">Enter your car model :</string>
+    <string name="start_button">Start Driving</string>
+    <string name="red_light">RED</string>
+    <string name="orange_light">ORANGE</string>
+    <string name="green_light">GREEN</string>
+</resources>

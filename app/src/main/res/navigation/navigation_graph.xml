@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/first_screen">
+
+    <fragment
+        android:id="@+id/first_screen"
+        android:name="com.example.trafficlightsystem.FirstScreen"
+        android:label="fragment_first_screen"
+        tools:layout="@layout/fragment_first_screen">
+        <action
+            android:id="@+id/action_first_screen_to_second_screen"
+            app:destination="@id/second_screen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/second_screen"
+        android:name="com.example.trafficlightsystem.SecondScreen"
+        android:label="fragment_second_screen"
+        tools:layout="@layout/fragment_second_screen">
+        <action
+            android:id="@+id/action_second_screen_to_first_screen"
+            app:destination="@id/first_screen"
+            app:popUpTo="@id/first_screen"/>
+        <argument
+            android:name="carArgument"
+            app:argType="string" />
+    </fragment>
+</navigation>
